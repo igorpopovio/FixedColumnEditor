@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows.Media;
 
 namespace FixedColumnOutputInWpf
@@ -24,55 +25,18 @@ namespace FixedColumnOutputInWpf
         private void InitializeColors()
         {
             _brushConverter = new BrushConverter();
-            _colors = new List<SolidColorBrush?>
+            _colors = new[]
             {
-                GetBrushFrom(colorHexCode: "f3b1cd"),
-                GetBrushFrom(colorHexCode: "f8d7e8"),
-                GetBrushFrom(colorHexCode: "bad5f0"),
-                GetBrushFrom(colorHexCode: "d6eff6"),
-                GetBrushFrom(colorHexCode: "f8efe6"),
-                GetBrushFrom(colorHexCode: "fae4cd"),
-
-                GetBrushFrom(colorHexCode: "f0d5ba"),
-                GetBrushFrom(colorHexCode: "e3a7c0"),
-                GetBrushFrom(colorHexCode: "b0abcb"),
-                GetBrushFrom(colorHexCode: "c2d5a8"),
-                GetBrushFrom(colorHexCode: "f2e9cc"),
-                GetBrushFrom(colorHexCode: "a5d5d5"),
-            };
+                "f3b1cd", "f8d7e8", "bad5f0", "d6eff6", "f8efe6", "fae4cd",
+                "f0d5ba", "e3a7c0", "b0abcb", "c2d5a8", "f2e9cc", "a5d5d5",
+            }.Select(colorHexCode => GetBrushFrom(colorHexCode)).ToList();
         }
 
         private void InitializeColumnSizes()
         {
             _columnSizes = new List<int>
             {
-                9,
-                15,
-                7,
-                5,
-                21,
-                21,
-                21,
-                21,
-                6,
-                4,
-                7,
-                6,
-                9,
-                3,
-                5,
-                9,
-                9,
-                7,
-                2,
-                6,
-                21,
-                21,
-                8,
-                9,
-                7,
-                21,
-                5,
+                9, 15, 7, 5, 21, 21, 21, 21, 6, 4, 7, 6, 9, 3, 5, 9, 9, 7, 2, 6, 21, 21, 8, 9, 7, 21, 5,
             };
         }
 

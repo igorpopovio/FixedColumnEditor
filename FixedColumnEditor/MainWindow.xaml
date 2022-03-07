@@ -18,7 +18,6 @@
                     <Setter Property="Padding" Value="-2" />
                     <Setter Property="BorderThickness" Value="0" />
                 </Style>
-
             </Grid.Resources>
             <ItemsControl ItemsSource="{Binding Columns}">
                 <ItemsControl.ItemsPanel>
@@ -32,10 +31,7 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-            <TextBox
-                AcceptsReturn="True"
-                Background="Transparent"
-                TextWrapping="NoWrap" />
+            <TextBox AcceptsReturn="True" Background="Transparent" />
         </Grid>
     </ScrollViewer>
 </Window>
