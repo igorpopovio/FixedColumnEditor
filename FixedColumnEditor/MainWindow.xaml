@@ -27,7 +27,10 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate DataType="{x:Type app:ColumnModel}">
-                        <TextBox Background="{Binding Color}" Text="{Binding Text}" />
+                        <TextBox
+                            Background="{Binding Color}"
+                            IsReadOnly="True"
+                            Text="{Binding Text, Mode=OneTime}" />
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
