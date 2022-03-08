@@ -1,0 +1,1 @@
+﻿ 4017580 20210503 18:40 117770 P    ACME Corp            Product A            ACME Ltd.            DHGU-123456-7        WAGON 100 0.5064 15    20210503 5  04   16220    32030    32030  + 5     84418                GERMANY              XXXXXX  21640    37860  FRANKFURT            XXXXX
