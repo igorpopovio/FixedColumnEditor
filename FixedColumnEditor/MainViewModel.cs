@@ -27,8 +27,8 @@ namespace FixedColumnOutputInWpf
             _brushConverter = new BrushConverter();
             _colors = new[]
             {
-                "f3b1cd", "f8d7e8", "bad5f0", "d6eff6", "f8efe6", "fae4cd",
-                "f0d5ba", "e3a7c0", "b0abcb", "c2d5a8", "f2e9cc", "a5d5d5",
+                "f8c1ba", "acded5", "faeba6",
+                "b4d3e8", "f6d2ae", "b3e4c7",
             }.Select(colorHexCode => GetBrushFrom(colorHexCode)).ToList();
         }
 
@@ -36,7 +36,8 @@ namespace FixedColumnOutputInWpf
         {
             _columnSizes = new List<int>
             {
-                9, 15, 7, 5, 21, 21, 21, 21, 6, 4, 7, 6, 9, 3, 5, 9, 9, 7, 2, 6, 21, 21, 8, 9, 7, 21, 5,
+                9, 15, 7, 5, 21, 21, 21, 21, 6, 4, 7, 6, 9,
+                3, 5, 9, 9, 7, 2, 6, 21, 21, 8, 9, 7, 21, 5,
             };
         }
 
